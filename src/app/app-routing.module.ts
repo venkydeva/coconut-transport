@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { FarmerComponent } from './farmer/farmer.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'farmer', component: FarmerComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
