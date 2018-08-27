@@ -1,6 +1,11 @@
 <div class="nav-background">
-<button mat-button (click)="goHome()">Home</button>
-<button mat-button [matMenuTriggerFor]="settings">Settings</button>
+<button mat-button (click)="goHome()">
+    <img class="btn-img" src="assets/icons/home.svg" /> Home
+</button>
+
+<button mat-button [matMenuTriggerFor]="settings">
+    <img class="btn-img" src="assets/icons/settings.svg" /> Settings
+</button>
 
 <mat-menu #settings="matMenu">
   <button mat-menu-item >Coconut Types</button>
